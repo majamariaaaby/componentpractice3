@@ -1,0 +1,28 @@
+---
+import CardItem from "./CardItem.astro";
+---
+
+<ul>
+  <CardItem
+    title="Micro Backpack"
+    category="Are you a minimalist looking for a compact carry option? The Micro Backpack is the perfect size for your essential everyday carry items. Wear it like a backpack or carry it like a satchel for all-day use."
+  />
+  <CardItem
+    title="Nomad Shopping Tote"
+    category="This durable shopping tote is perfect for the world traveler. It's yellow canvas construction is water, fray, tear resistant. The matching handle, backpack straps, and shoulder loops provide multiple carry options for a day out on your next adventure."
+  />
+
+  <!-- {data.map((item) => <CardItem {...item} />)} -->
+</ul>
+
+<style>
+  ul {
+    margin: 1.5rem;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    list-style-type: none;
+    background-color: #ffffff;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    width: 600px;
+  }
+</style>

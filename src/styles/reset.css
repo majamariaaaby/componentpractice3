@@ -10,16 +10,11 @@
 
 html {
   -webkit-text-size-adjust: none;
-
   -webkit-font-smoothing: antialiased;
-
   block-size: 100%;
-
-  color: var(--gray-7);
-
-  font-family: var(--font-sans);
-
-  line-height: var(--font-lineheight-3);
+  color: #222;
+  font-family: system-ui;
+  line-height: 1.6;
 }
 
 body {
@@ -31,7 +26,6 @@ picture,
 video,
 svg {
   display: block;
-
   max-width: 100%;
 }
 
@@ -45,7 +39,6 @@ select {
 ul:where([role="list"]),
 ol:where([role="list"]) {
   list-style: none;
-
   padding: 0;
 }
 
@@ -57,14 +50,16 @@ h4,
 h5,
 h6 {
   overflow-wrap: break-word;
-
-  font-size: initial;
+  font-size: unset;
 }
 
 h1,
 h2,
 h3 {
   color: var(--gray-9);
-
   line-height: var(--font-lineheight-0);
+}
+
+a {
+  text-decoration: none;
 }
